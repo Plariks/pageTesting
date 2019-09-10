@@ -26,11 +26,11 @@ public class DressesTest {
         dressPage.clickingOnChoosedDress("Printed Dress");
         choosedDressPage = new ChoosedDressPage(baseFunc);
         choosedDressPage.checkDressColor("Orange");
-        choosedDressPage.howMuchDressesYouNeed(1000);
+        choosedDressPage.howMuchDressesYouNeed(10000);
         choosedDressPage.pressAddToCart();
 
         dressPage.clickingOnChoosedDress("Printed Chiffon Dress");
-        choosedDressPage.howMuchDressesYouNeed(1000);
+        choosedDressPage.howMuchDressesYouNeed(10000);
         choosedDressPage.pressAddToCart();
 
         homePage.pressCartButton();

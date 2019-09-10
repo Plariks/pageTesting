@@ -23,8 +23,8 @@ public class YourCartPage {
 
     private String addDollarSimbolAndSum;
 
-    private static DecimalFormat threeNumber = new DecimalFormat("0.00");
-    private static DecimalFormat fourNumber = new DecimalFormat("0,000.00");
+    private static DecimalFormat threeNumber = new DecimalFormat("$0.00");
+    private static DecimalFormat fourNumber = new DecimalFormat("$0,000.00");
 
     public YourCartPage(BaseFunc baseFunc) {
         this.baseFunc = baseFunc;
@@ -47,9 +47,9 @@ public class YourCartPage {
 
     public void dressPricePlusDelivery() {
         if (sumSimple < 1000) {
-            addDollarSimbolAndSum = "$" + (threeNumber.format(sumSimple + delivery));
+            addDollarSimbolAndSum = (threeNumber.format(sumSimple + delivery));
         } else if (sumSimple >= 1000) {
-            addDollarSimbolAndSum = "$" + (fourNumber.format(sumSimple + delivery));
+            addDollarSimbolAndSum = (fourNumber.format(sumSimple + delivery));
         }
     }
 
