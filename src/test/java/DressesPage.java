@@ -18,6 +18,7 @@ public class DressesPage {
     private String pinkCode = "background: rgb(252, 202, 205);";
     private String beigeCode = "background: rgb(119, 119, 119);";
     private String greenCode = "background: rgb(160, 212, 104);";
+    private String whiteCode = "background: rgb(255, 255, 255);";
 
 
     private String orangeTrue;
@@ -45,6 +46,8 @@ public class DressesPage {
             colorCodes = beigeCode;
         } else if (colorCodes == "Green") {
             colorCodes = greenCode;
+        } else if (colorCodes == "White") {
+            colorCodes = whiteCode;
         }
         for (int j = 0; j < getFilteredItems(ALL_EXISTING_COLORS_ON_PAGE).size(); j++) {
             orangeTrue = getFilteredItems(ALL_EXISTING_COLORS_ON_PAGE).get(j).getAttribute("style");
